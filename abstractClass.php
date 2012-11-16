@@ -9,10 +9,6 @@ abstract Class animalHello {
 		$this->name = $name;
 	}
 
-	//abstract public function getName(){
-	//	return $this->name;
-	//}
-
 	abstract protected function sayHello();
 
 }
