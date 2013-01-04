@@ -1,7 +1,7 @@
 php-design-patterns
 ===================
 
-PHP Design Pattern Examples
+PHP Design Pattern Examples.
 
 useful URLS
 -----------
