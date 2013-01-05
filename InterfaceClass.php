@@ -1,38 +1,47 @@
 <?php 
 //http://www.fluffycat.com/PHP-Design-Patterns/PHP-OO-Interface-Basics/
-abstract Class animalHello {
+interface animalHello {
 	
-	protected $name = null;
-	protected static $lineBreak = "\n";
-
-	public function __construct($name){
-		$this->name = $name;
-	}
-
-	abstract protected function sayHello();
+	function sayHello();
 
 }
-Class humanHello extends animalHello{
+
+interface animalGoodbye {
+	
+	function sayGoodbye();
+
+}
+
+Class human implements animalHello, animalGoodbye{
 		
 	public function sayHello() {
-		printf("Hello ".$this->name.self::$lineBreak);
+		printf("Hello <br>");
+	}
+
+	public function sayGoodbye() {
+		printf("See ya <br>");
 	}
 
 }
 
-Class catHello extends animalHello{
+Class cat implements animalHello, animalGoodbye{
 		
 	public function sayHello() {
-		printf("here puss pusss puss, here ".$this->name.self::$lineBreak);
+		printf("here puss pusss puss <br>");
+	}
+
+	public function sayGoodbye() {
+		printf("Woof! <br>");
 	}
 
 }
 
-$me =  new humanHello('Mark');
+$me =  new human();
 
 $me->sayHello();
+$me->sayGoodbye();
 
-$cat =  new catHello('Rufus');
+$cat =  new cat();
 
 $cat->sayHello();
-
+$cat->sayGoodbye();

@@ -1,0 +1,52 @@
+Contents
+--------
+
+General
+-------
+
+Class
+-----
+
+Abstract Class
+--------------
+A class that cannot be instantiated itself, it provides a blueprint or contract that inheriting classes must fulfill before the code will run. A class that 'extends' the abstract can only extend one class
+abstract class specified by defined by :- abstract Class <className> {
+inheriting class extends abstract with :- Class <className> extends <AbstractClassName>{
+
+
+Interface
+---------
+
+An interface is a class that also provides a blueprint or contract an inheriting class must fulfill before it will instantiate, a class that implements the interface can implement as many interfaces as it likes
+
+
+
+Patterns
+--------
+
+Strategy
+Observer
+Decorator
+Factory
+Singleton
+Command
+Adapter
+Facade
+Template Method
+Iterator
+Composite
+State
+Proxy
+Compound Patterns
+
+Extra Patterns
+--------------
+Bridge
+Builder
+Chain of Reposnsibility
+Flyweight
+Interpreter
+Mediator
+Memento
+Prototype
+Visitor
