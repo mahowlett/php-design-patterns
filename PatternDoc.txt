@@ -1,8 +1,9 @@
 Contents
+========
 --------
 
 General
--------
+=======
 
 Abstract Class
 --------------
@@ -20,10 +21,18 @@ inheriting class implements interface with :- class <className> implements <inte
 
 
 Patterns
---------
+========
 
 Strategy
+--------
+Strategy pattern used when many classes that inherit from a a parent class will often share algorithms within the same method eg cats and horses both canter so would share the method for canter. Can decide at runtime which algorithm to use.
+
 Observer
+--------
+A pattern where an instance notifies a watching class if it changes, classes can attach and detach themselves from being observed at any point. Useful for reporting auditing type systems.
+
+
+
 Decorator
 Factory
 Singleton
