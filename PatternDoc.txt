@@ -4,13 +4,10 @@ Contents
 General
 -------
 
-Class
------
-
 Abstract Class
 --------------
 A class that cannot be instantiated itself, it provides a blueprint or contract that inheriting classes must fulfill before the code will run. A class that 'extends' the abstract can only extend one class
-abstract class specified by defined by :- abstract Class <className> {
+abstract class defined by :- abstract Class <className> {
 inheriting class extends abstract with :- Class <className> extends <AbstractClassName>{
 
 
@@ -18,7 +15,8 @@ Interface
 ---------
 
 An interface is a class that also provides a blueprint or contract an inheriting class must fulfill before it will instantiate, a class that implements the interface can implement as many interfaces as it likes
-
+interface class defined by :- interface <className> {  
+inheriting class implements interface with :- class <className> implements <interfaceOneClassName>,<interfaceTwoClassName>... {
 
 
 Patterns
