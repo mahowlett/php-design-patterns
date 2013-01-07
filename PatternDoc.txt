@@ -31,11 +31,18 @@ Observer
 --------
 A pattern where an instance notifies a watching class if it changes, classes can attach and detach themselves from being observed at any point. Useful for reporting auditing type systems.
 
-
-
 Decorator
 Factory
+
 Singleton
+---------
+A singleton is a pattern where only one instance of the class can ever exist, useful for services and similar.
+
+multiton
+--------
+
+The multiton pattern is an extension of the singleton pattern such that only one instance of each type can be instantiated.
+
 Command
 Adapter
 Facade
