@@ -16,6 +16,7 @@ abstract Class abstractAnimal {
 
 Class animalObserver extends abstractAnimalObserver {
 
+	//global counts of eats and sleeps
 	protected $sleeps = 0;
 	protected $eats = 0;
 	protected static $lineBreak = "<br>";

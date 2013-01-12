@@ -9,11 +9,12 @@ Class PrintersMultiton {
 
     static function printPage($printerName) {
     
-		if (!isset(self::$_printers[$printerName])) {
+		  if (!isset(self::$_printers[$printerName])) {
            self::$_printers[$printerName]= new PrintersMultiton();
-        }
-        
-    	return self::$_printers[$printerName];
+           return self::$_printers[$printerName];
+      } else { 
+    	 return null;
+      }
     }
 
 
@@ -70,10 +71,14 @@ $printPage1->getStatus('job1');
 $printPage2->printPage('job1');
 $printPage2->getStatus('job1');
 
+//page 2 will be able to print as it uses different key to page1
+$printPage2->printPage('job2');
+$printPage2->getStatus('job2');
+
 //page1 releases the printer
 $printPage1->finishJob('job1');
   
-//now page 2 can print
+//now page 2 can print using key page 1 had
 $printPage2->printPage('job1');
 $printPage2->getStatus('job1');
   
