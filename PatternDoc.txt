@@ -33,7 +33,7 @@ A pattern where an instance notifies a watching class if it changes, classes can
 
 Decorator
 --------
-A decorator is a way of adding non core functionality to a class without affecting the base class, critical pattern for the OO aim "open to extension, closed to modification" allows classes to be 'decorated' with new functionality. 
+A decorator is a way of adding non core functionality to a class without affecting the base class, critical pattern for the OO aim "open to extension, closed to modification" allows classes to be 'decorated' with new functionality. Care is needed to ensure the principle is not employed everywhere as it tends to produce overly complex unreadable code.
 
 Factory
 -------
